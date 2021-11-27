@@ -1,0 +1,85 @@
+
+
+
+    <!---header section-->
+    <%- include('include/_header')%>
+    <!--header section-->
+    <!-- main site-->
+    <main id="main-site">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i>All Users</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update user</h2>
+                <span class="text-light">Use the below form to create a new account</span>
+            </div>
+
+
+            <form method="POST" id="update_user">
+                <div class="new_user">
+            
+            
+                    <div class="form-group">
+                        <lebel for="name" class="text-light">Name</lebel>
+                        <input type="hidden" name="id" value="<%= user._id %>">
+                        <input type="text" name="value" value="<%= user.name %>" placeholder=" write the name">
+                    </div>
+            
+            
+                    <div class="form-group">
+                        <lebel for="Email" class="text-light">E-mail</lebel>
+                        <input type="text" name="email" value="<%= user.email %>" placeholder="example@gmail.com">
+                    </div>
+            
+                               <!--Gender section-->
+            
+            
+                    <div class="form-group">
+                        <lebel for="gender" class="text-light">Gender</lebel>
+                        <div class="radio-inline">
+                            <input type="radio" id="radio-2" name="gender" value="male"<%= user.gender == 'male'?'checked':'' %>>
+                            <lebel for="radio-2" class="radio-lebel">Male</lebel>
+                        </div>
+            
+                        <div class="radio-inline">
+                            <input type="radio" id="radio-3" name="gender" value="female"<%= user.gender == 'female'?'checked':'' %>>
+                            <lebel for="radio-3" class="radio-lebel">Female</lebel>
+                        </div>
+            
+            
+                            <!--status section-->
+            
+            
+                        <div class="form-group">
+                            <lebel for="gender" class="text-light">Status</lebel>
+                            <div class="radio-inline">
+                                <input type="radio" id="radio-4" name="status" value="active"<%= user.status == 'active'?'checked':'' %>>
+                                <lebel for="radio-4" class="radio-lebel">active</lebel>
+                            </div>
+            
+                            <div class="radio-inline">
+                                <input type="radio" id="radio-5" name="status" value="inactive" <%= user.status == 'inactive'?'checked':'' %>>
+                                <lebel for="radio-5" class="radio-lebel">inactive</lebel>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn text-dark update">Save</button>
+                        </div>
+                    </div>
+            
+            </form>
+            
+        </div>
+    </main>
+
+
+
+    <!--main site-->
+
+
+    <!---footer section-->
+    <%- include('include/_footer')%>
+    <!--footer section-->
