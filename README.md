@@ -1,8 +1,10 @@
 # CRUD_APP
+* This is a Create, Read, Update, and Delete (CRUD) web application.
+* It is used to developed by using Node.js and express.js.
+* Non relational database is ude (MongoDB).
+* For learn backend development you can clone this repository to your system.
 
-THANK YOU FOR VISITING MY PROFILE 
-You found a great acount where you can get to know about the specific project that I have done .
 
 
-It is mostly Projected towards the backend configuration part so here I have done working with nodejs runtime server with express.js library and a nonrelational database 
-which named as mongo db.
+
+
