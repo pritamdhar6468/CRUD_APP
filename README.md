@@ -10,6 +10,8 @@
 * Read: View all items stored in the database in a list format.
 * Update: Edit and update existing items in the database.
 * Delete: Remove items from the database.
+# Installation
+To get started with this project, follow the steps below:
 
 
 
